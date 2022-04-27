@@ -9,10 +9,10 @@ SET( EXECUTABLE_OUTPUT_PATH ${CMAKE_SOURCE_DIR} )
 # C++ settings
 SET(CMAKE_CXX_STANDARD 17)
 
-FILE(GLOB
+FILE(GLOB 
       SRC_FILES 
       ${PROJECT_SOURCE_DIR}/src/container/associative/*.cpp
-      ${PROJECT_SOURCE_DIR}/src/container/sequence/*.cpp
+      ${PROJECT_SOURCE_DIR}/src/container/sequence/*.cpp 
 )
 
 FOREACH(SRC ${SRC_FILES})

@@ -1,7 +1,5 @@
 {
-    "files.associations": {
-        "vector": "cpp"
-    },
     "editor.formatOnSave": true,
     "editor.renderWhitespace": "all",
+    "activation"
 }
