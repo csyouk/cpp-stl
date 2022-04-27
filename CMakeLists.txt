@@ -1,15 +1,23 @@
+CMAKE_MINIMUM_REQUIRED(VERSION 3.10)
+
 # project setting
-SET ( PROJ_NAME cmake-test )
+SET ( PROJ_NAME cpp-stl )
 PROJECT ( ${PROJ_NAME} )
 SET( EXECUTABLE_OUTPUT_PATH ${CMAKE_SOURCE_DIR} )
+SET ( CMAKE_VERBOSE_MAKEFILE true )
 
 # C++ settings
 SET(CMAKE_CXX_STANDARD 17)
 
-# set source and headers
-SET (SRC_FILES
-    src/main.cpp
+FILE(GLOB_RECURSE 
+      SRC_FILES 
+      ${PROJECT_SOURCE_DIR}/src/container/associative/*.cpp
+      ${PROJECT_SOURCE_DIR}/src/container/sequence/*.cpp
 )
 
+FOREACH(SRC ${SRC_FILES})
+  MESSAGE(STATUS "LINKED SOURCE FILE : " ${SRC})
+ENDFOREACH()
+
 # build
-ADD_EXECUTABLE( ${PROJ_NAME} ${SRC_FILES} )
+ADD_EXECUTABLE(${PROJ_NAME} ${SRC_FILES})
