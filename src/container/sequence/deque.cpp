@@ -1,11 +1,21 @@
-#include <deque>
+// #include <deque>
+// #include <iostream>
 
-#include <iostream>
+// using namespace std;
 
-using namespace std;
+// int main(int argc, char *argv[])
+// {
+//     deque<int> dq;
+//     for (size_t i = 0; i < 10; i++)
+//     {
+//         dq.push_back(i * 10);
+//     }
 
-int main(int argc, char *argv[])
-{
+//     deque<int>::iterator iter = dq.begin();
+//     for (size_t i = 0; i < 10; i++)
+//     {
+//         cout << iter[i] << endl;
+//     }
 
-    return 0;
-}
+//     return 0;
+// }
